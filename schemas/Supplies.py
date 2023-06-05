@@ -5,7 +5,7 @@ class Supplies(BaseModel):
     id : Optional[int] = None
     supplier_id : int = Field(ge=1, description="supplier.id")
     product_id : int  = Field(ge=1, description= "product.id")
-    purchase_price : float = Field(ge=1,le=10000)
+    purchase_price : float = Field(ge=1)
     class Config:
         schema_extra = {
             "example":{

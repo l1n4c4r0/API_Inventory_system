@@ -1,11 +1,11 @@
-from sqlalchemy import Column, ForeignKey, Integer
+from sqlalchemy import Column, ForeignKey, Integer, Float
 
 from config.database import Base
 
 
 class Supplies(Base):
 
-    __tablename__ ="Supplies"
+    __tablename__ ="supplies"
 
     id = Column(Integer, primary_key=True)
     supplier_id = Column(Integer, ForeignKey("supplier.id"))

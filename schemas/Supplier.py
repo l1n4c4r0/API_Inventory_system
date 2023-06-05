@@ -4,8 +4,8 @@ from typing import Optional
 class Supplier(BaseModel):
     id : Optional[int] = None
     name : str = Field(max_length=30,min_length=3)
-    addrees : str = Field(max_length=30,min_length=3,ge=0,le=1000)
-    phone : int = Field(ge=1,le=1000)
+    addrees : str = Field(max_length=30,min_length=3)
+    phone : int = Field(ge=1)
     email : str = Field(max_length=30,min_length=3)
 
     class Config:

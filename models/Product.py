@@ -3,9 +3,9 @@ from sqlalchemy import Column,Integer, String, Float
 from config.database import Base
 
 
-class Pruduct(Base):
+class Product(Base):
 
-    __tablename__ = "Product"
+    __tablename__ = "product"
 
     id = Column(Integer,primary_key = True)
     name = Column(String)
